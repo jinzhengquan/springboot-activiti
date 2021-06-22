@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: springboot-template
+  cloud.nacos.config.file-extension: yml

@@ -1,0 +1,32 @@
+server:
+  port: 8887
+  servlet:
+    context-path: /
+
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    mode: HTML5
+    encoding: utf-8
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+    serialization:
+      write_dates_as_timestamps: false
+    default-property-inclusion: non_null
+    deserialization:
+      accept_float_as_int: false
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
+    show-sql: true
+    open-in-view: false
+  messages:
+    basename: messages.exception
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+    freemarker:
+      cache: false
+
+

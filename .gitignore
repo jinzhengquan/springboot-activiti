@@ -1,0 +1,6 @@
+.gradle/
+.idea/
+build/
+src/main/resources/application-local.yml
+src/main/resources/bootstrap-local.yml
+*-local.yml
